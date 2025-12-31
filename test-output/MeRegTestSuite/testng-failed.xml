@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MeRegTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginTests(failed)">
+    <classes>
+      <class name="TestCases.LoginTest">
+        <methods>
+          <include name="testEmptyPassword"/>
+          <include name="testEmptyUIDPWD"/>
+          <include name="testInvalidPassword"/>
+          <include name="testEmptyUsername"/>
+          <include name="setup"/>
+          <include name="testInvalidUsername"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestCases.LoginTest -->
+    </classes>
+  </test> <!-- LoginTests(failed) -->
+</suite> <!-- Failed suite [MeRegTestSuite] -->

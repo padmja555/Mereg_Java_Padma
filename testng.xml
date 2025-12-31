@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite">
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+
+    <test name="Admin Testcase">
+        <classes>
+                
+ 				 <class name="AdminTestcase.PaymentSummaryTest"/>
+ 				    <class name="AdminTestcase.ComposeMessageTest"/>
+
+        
+        </classes>
+    </test>
+</suite>
+
+
+
+
+           
+              
+                
+            
+          
+       
+    
+
+
