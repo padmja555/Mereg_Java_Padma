@@ -28,10 +28,17 @@ public class AllParentsAdinStaffComposeMessagePage {
             By.xpath("//span[normalize-space()='All Parents']");
     private By newMessageBtn =
             By.xpath("//button[contains(.,'New Message')]");
+    private By primaryRecipientDropdown =
+            By.xpath("//label[contains(text(),'Primary Recipient')]/following::mat-select[1]");
 
+    private By allParentsCheckbox =
+            By.xpath("//mat-option//span[normalize-space()='All Parents']");
+    /*
     private By primaryRecipientDropdown =
             By.xpath("//mat-select[@formcontrolname='primaryRecipient']");
-
+    private By allParentsCheckbox =
+            By.xpath("//mat-checkbox//span[normalize-space()='All Parents']");
+	*/
     private By additionalRecipientsDropdown =
             By.xpath("(//mat-select)[2]");
 
@@ -76,27 +83,63 @@ public class AllParentsAdinStaffComposeMessagePage {
     public void selectAllParentsTab() {
         wait.until(ExpectedConditions.elementToBeClickable(allParentsTab)).click();
     }
+    
+    
 
     public void clickNewMessage() {
         wait.until(ExpectedConditions.elementToBeClickable(newMessageBtn)).click();
     }
-
+    
+//selectPrimaryAllParents
     // ✅ PRIMARY RECIPIENT – ALL PARENTS
+    /*
     public void selectPrimaryAllParents() {
 
+        // 1️⃣ Click Primary Recipient dropdown
         WebElement dropdown = wait.until(
-                ExpectedConditions.elementToBeClickable(primaryRecipientDropdown)
+                ExpectedConditions.presenceOfElementLocated(
+                        By.xpath("//mat-select[@formcontrolname='primaryRecipient']")
+                )
         );
         jsClick(dropdown);
 
-        WebElement option = wait.until(
-                ExpectedConditions.elementToBeClickable(
+        // 2️⃣ Locate the REAL checkbox input
+        WebElement checkboxInput = wait.until(
+                ExpectedConditions.presenceOfElementLocated(
+                        By.xpath("//mat-checkbox[.//span[normalize-space()='All Parents']]//input[@type='checkbox']")
+                )
+        );
+
+        // 3️⃣ Click checkbox via JavaScript (Angular-safe)
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].click();", checkboxInput);
+
+        // 4️⃣ Close dropdown
+        dropdown.sendKeys(Keys.ESCAPE);
+    }*/
+    //****************@ndmethod
+
+    
+    public void selectPrimaryAllParents() {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        // 1️⃣ Click Primary Recipient dropdown
+        WebElement dropdown = wait.until(
+                ExpectedConditions.presenceOfElementLocated(primaryRecipientDropdown)
+        );
+        js.executeScript("arguments[0].click();", dropdown);
+
+        // 2️⃣ Click "All Parents" option directly (NO overlay)
+        WebElement allParents = wait.until(
+                ExpectedConditions.presenceOfElementLocated(
                         By.xpath("//mat-option[.//span[normalize-space()='All Parents']]")
                 )
         );
-        jsClick(option);
+        js.executeScript("arguments[0].click();", allParents);
 
-        closeDropdown();
+        // 3️⃣ Close dropdown safely
+        dropdown.sendKeys(Keys.ESCAPE);
     }
 
     // ✅ ADDITIONAL RECIPIENTS
@@ -122,6 +165,7 @@ public class AllParentsAdinStaffComposeMessagePage {
         // Close dropdown
         new Actions(driver).sendKeys(Keys.ESCAPE).perform();
     }
+    
  // ✅ RANDOM MESSAGE TYPE (STABLE)
     public void selectRandomMessageType() {
         JavascriptExecutor js = (JavascriptExecutor) driver;

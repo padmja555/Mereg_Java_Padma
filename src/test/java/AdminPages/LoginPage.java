@@ -15,7 +15,10 @@ public class LoginPage {
     // Locators
     private By emailInput = By.xpath("//input[@id='login-username']");
     private By passwordInput = By.xpath("//input[@id='login-password']");
-    private By signInButton = By.xpath("//a[@class='mat-focus-indicator mat-raised-button mat-button-base']");
+    //private By signInButton = By.xpath("//a[@class='mat-focus-indicator mat-raised-button mat-button-base']");
+    //button//span[text()=' Sign In ']/parent::button
+    private By signInButton = By.xpath("//button//span[text()=' Sign In ']/parent::button");
+
     private By errorMessage = By.xpath("//simple-snack-bar//span | //div[contains(@class,'mat-snack-bar-container')]");
 
     // Constructor

@@ -29,7 +29,7 @@ public class ApproveArrowStatusPage {
     }
 
     public void navigateToDashboard() {
-        driver.get("https://mereg.netlify.app/navigation-home/dashboard");
+        driver.get("https://mereg-dev.netlify.app/navigation-home/dashboard");
         System.out.println("Navigated to Dashboard.");
     }
 

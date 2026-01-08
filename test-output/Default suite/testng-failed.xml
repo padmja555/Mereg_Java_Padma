@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AdminTestcase.AllStaffMessageTest">
+      <class name="AdminTestcase.ReplyStaffMessageTest">
         <methods>
           <include name="setup"/>
-          <include name="testFullMessageCompositionAndSend"/>
+          <include name="replyToRandomMessageWithAttachment"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- AdminTestcase.AllStaffMessageTest -->
+      </class> <!-- AdminTestcase.ReplyStaffMessageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

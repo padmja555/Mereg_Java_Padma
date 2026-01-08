@@ -28,7 +28,7 @@ public class AllstafAdminComposemessageTest {
 
     private final String ADMIN_EMAIL = "srasysife@gmail.com";
     private final String ADMIN_PASSWORD = "Admin@123";
-    private final String ADMIN_URL = "https://mereg.netlify.app/";
+    private final String ADMIN_URL = "https://mereg-dev.netlify.app/";
     private final String MESSAGE_PAGE_URL = ADMIN_URL + "navigation-home/admin-new-messages";
 
     @BeforeClass

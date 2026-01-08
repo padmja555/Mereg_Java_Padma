@@ -43,8 +43,9 @@ public class AllParentsAdinStaffComposeMessageTest extends BaseDriver {
     public void sendMessageWithAttachments() throws InterruptedException {
 
         page.selectPrimaryAllParents();
+     // Thread.sleep(2000);
 
-        String[] additional = {"Parent", "Staff"};
+        //String[] additional = {"Parent", "Staff"};
        // page.selectAdditionalRecipients(additional);
         page.selectFirstSixAdditionalRecipients();
         Thread.sleep(2000);
