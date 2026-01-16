@@ -256,6 +256,40 @@ public class AllIndividualParentStaffAdmincomposeMessaeagePage {
         }
     }
 */
+    public void uploadAllPdfFilesFromFolder() {
+        String basePath =
+            "C:\\Users\\padma.DESKTOP-ODC64OD\\OneDrive\\Pictures\\Screenshots\\";
+
+        File folder = new File(basePath);
+
+        File[] pdfFiles = folder.listFiles(
+            (dir, name) -> name.toLowerCase().endsWith(".pdf")
+        );
+
+        if (pdfFiles == null || pdfFiles.length == 0) {
+            throw new RuntimeException("❌ No PDF files found in folder");
+        }
+
+        WebElement fileInput = wait.until(
+            ExpectedConditions.presenceOfElementLocated(
+                By.cssSelector("input[type='file']")
+            )
+        );
+
+        StringBuilder paths = new StringBuilder();
+
+        for (File pdf : pdfFiles) {
+            paths.append(pdf.getAbsolutePath()).append("\n");
+        }
+
+        fileInput.sendKeys(paths.toString().trim());
+
+        System.out.println("✅ Uploaded " + pdfFiles.length + " PDFs");
+    }
+    
+    
+    
+    
     public void clickSendMessage() {
 
         By sendBtn = By.xpath("//button//span[normalize-space()='Send Message']");

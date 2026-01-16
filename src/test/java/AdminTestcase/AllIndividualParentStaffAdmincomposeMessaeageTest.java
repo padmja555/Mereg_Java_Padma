@@ -10,6 +10,7 @@ import Base.BaseDriver;
 import java.util.Arrays;
 import java.util.List;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -76,6 +77,15 @@ import org.testng.annotations.Test;
             //**************************
             composePage.selectRandomMessageType();
             composePage.enterRandomSubjectAndMessage();
+            composePage.uploadAllPdfFilesFromFolder();
+            	    //"Student-Enrollment-Form (34).pdf",
+            	   // "Students List (43).pdf"
+            	    //"Students List.pdf"
+            	//);
+                
             composePage.clickSendMessage();
+            System.out.println("✅ Test Passed: Message sent successfully");
         }
     }
+
+    

@@ -196,7 +196,11 @@ public class AllStaffAdminComposeMessagePage {
             System.err.println("❌ Upload failed: " + e.getMessage());
             e.printStackTrace();
         }
-    }    // --- Method 2: Using hidden input + JS manipulation ---
+    }
+    
+    
+    
+    // --- Method 2: Using hidden input + JS manipulation ---
     public void uploadFilesByJS(String... absoluteFilePaths) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         try {

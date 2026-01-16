@@ -103,32 +103,31 @@ public class AllMessagedropdownPage {
     }
 
 
-    /** Click any random message */
     public void openRandomMessage() {
 
-        By adminMeRegMessages =
-            By.xpath("//div[contains(@class,'message-header')][.//h3[normalize-space()='Admin MeReg']]");
-
-        List<WebElement> messages = wait.until(
-            ExpectedConditions.visibilityOfAllElementsLocatedBy(adminMeRegMessages)
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        By messageHeader = By.xpath(
+            "//div[contains(@class,'message-header')]//h3"
         );
 
-        if (messages.isEmpty()) {
-            throw new RuntimeException("❌ No Admin MeReg messages found");
+        int attempts = 0;
+
+        while (attempts < 3) {
+            try {
+                wait.until(ExpectedConditions.visibilityOfElementLocated(messageHeader));
+
+                List<WebElement> messages = driver.findElements(messageHeader);
+
+                messages.get(new Random().nextInt(messages.size())).click();
+                return;
+
+            } catch (StaleElementReferenceException e) {
+                attempts++;
+            }
         }
 
-        WebElement randomMessage = messages.get(random.nextInt(messages.size()));
-
-        // 🔥 Click INNER element, not container
-        WebElement clickable =
-            randomMessage.findElement(By.xpath(".//h3"));
-
-        wait.until(ExpectedConditions.elementToBeClickable(clickable)).click();
-
-        // 🔥 Wait until reply panel loads
-        wait.until(ExpectedConditions.presenceOfElementLocated(replyTextarea));
+        throw new RuntimeException("Failed to open message due to repeated DOM refresh");
     }
-
     /** Type random reply */
     public void typeRandomReply() {
         WebElement replyBox =

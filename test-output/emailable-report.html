@@ -8,47 +8,92 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">76,750</td><td></td><td></td></tr>
+<tr><th colspan="8">Test Suite</th></tr>
+<tr><td><a href="#t0">Admin Testcase</a></td><td class="num">7</td><td class="num attn">3</td><td class="num">0</td><td class="num">0</td><td class="num">404,931</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">AdminTestcase.ReplyStaffMessageTest</td><td><a href="#m0">replyToRandomMessageWithAttachment</a></td><td rowspan="1">1767877256630</td><td rowspan="1">71463</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Admin Testcase &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">AdminTestcase.AllMessagedropdownTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1768396107589</td><td rowspan="1">20825</td></tr><tr class="failedodd"><td rowspan="1">AdminTestcase.AllParentComposeMessageTest</td><td><a href="#m1">setupTest</a></td><td rowspan="1">1768396157053</td><td rowspan="1">22818</td></tr><tr class="failedeven"><td rowspan="1">AdminTestcase.AllParentsAdinStaffComposeMessageTest</td><td><a href="#m2">setupTest</a></td><td rowspan="1">1768396131987</td><td rowspan="1">20657</td></tr><tr><th colspan="4">Admin Testcase &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">AdminTestcase.AllMessagedropdownTest</td><td><a href="#m3">tearDown</a></td><td rowspan="1">1768396128446</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">AdminTestcase.AllParentComposeMessageTest</td><td><a href="#m4">tearDown</a></td><td rowspan="1">1768396179877</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">AdminTestcase.AllParentsAdinStaffComposeMessageTest</td><td><a href="#m5">tearDown</a></td><td rowspan="1">1768396152649</td><td rowspan="1">0</td></tr><tr><th colspan="4">Admin Testcase &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">AdminTestcase.AllMessagedropdownTest</td><td><a href="#m6">replyToRandomMessageWithAttachment</a></td><td rowspan="1">1768396128424</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">AdminTestcase.AllParentComposeMessageTest</td><td><a href="#m7">sendAllParentsMessageWithRandomStaffCC</a></td><td rowspan="1">1768396179873</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">AdminTestcase.AllParentsAdinStaffComposeMessageTest</td><td><a href="#m8">sendMessageWithAttachments</a></td><td rowspan="1">1768396152645</td><td rowspan="1">0</td></tr><tr><th colspan="4">Admin Testcase &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">AdminTestcase.AdminSearchMessageTest</td><td><a href="#m9">replyToRandomMessageWithAttachment</a></td><td rowspan="1">1768396300866</td><td rowspan="1">49757</td></tr><tr class="passedodd"><td rowspan="1">AdminTestcase.AllMessageSearchTest</td><td><a href="#m10">replyToRandomMessageWithAttachment</a></td><td rowspan="1">1768396356285</td><td rowspan="1">44526</td></tr><tr class="passedeven"><td rowspan="1">AdminTestcase.AllStaffMessageTest</td><td><a href="#m11">testFullMessageCompositionAndSend</a></td><td rowspan="1">1768396193976</td><td rowspan="1">100573</td></tr><tr class="passedodd"><td rowspan="1">AdminTestcase.IndidualParentMessageTest</td><td><a href="#m12">sendAllIndidualMessageWithRandomStaffCC</a></td><td rowspan="1">1768396406899</td><td rowspan="1">14395</td></tr><tr class="passedeven"><td rowspan="1">AdminTestcase.IndidualStaffMessageTest</td><td><a href="#m13">sendAllIndidualMessageWithRandomStaffCC</a></td><td rowspan="1">1768396425507</td><td rowspan="1">8671</td></tr><tr class="passedodd"><td rowspan="1">AdminTestcase.IndividualComposeMessageTest</td><td><a href="#m14">sendIndividualMessageRandomly</a></td><td rowspan="1">1768396442570</td><td rowspan="1">11139</td></tr><tr class="passedeven"><td rowspan="1">AdminTestcase.StaffSearchMessageTest</td><td><a href="#m15">replyToRandomMessageWithAttachment</a></td><td rowspan="1">1768396458961</td><td rowspan="1">49406</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">AdminTestcase.ReplyStaffMessageTest#replyToRandomMessageWithAttachment</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(.,&apos;Send Reply&apos;)] (tried for 20 second(s) with 500 milliseconds interval)
+<h2>Admin Testcase</h2><h3 id="m0">AdminTestcase.AllMessagedropdownTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()=&apos;Messages&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60554}, goog:processID: 9220, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60554/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a05cfde0f235bd2c969055fc9313ec03
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60076}, goog:processID: 7184, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60076/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c3bffdfc36f530983ee3547da49a9226
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at AdminPages.ReplyStaffMessagePage.clickSendReply(ReplyStaffMessagePage.java:204)
-	at AdminTestcase.ReplyStaffMessageTest.replyToRandomMessageWithAttachment(ReplyStaffMessageTest.java:67)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at AdminPages.AllMessagedropdownPage.clickOnMessageTab(AllMessagedropdownPage.java:61)
+	at AdminTestcase.AllMessagedropdownTest.setup(AllMessagedropdownTest.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">AdminTestcase.AllParentComposeMessageTest#setupTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()=&apos;Messages&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51350}, goog:processID: 23196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51350/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d31d8dc6a969f0f71d54379e5239aa7
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at AdminPages.AMessagePage.clickOnMessage(AMessagePage.java:31)
+	at AdminTestcase.AllParentComposeMessageTest.setupTest(AllParentComposeMessageTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">AdminTestcase.AllParentsAdinStaffComposeMessageTest#setupTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()=&apos;Messages&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64468}, goog:processID: 22020, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64468/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b7d30f1b3e6701f819c19723c35ca3a3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at AdminPages.AMessagePage.clickOnMessage(AMessagePage.java:31)
+	at AdminTestcase.AllParentsAdinStaffComposeMessageTest.setupTest(AllParentsAdinStaffComposeMessageTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">AdminTestcase.AllMessagedropdownTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">AdminTestcase.AllParentComposeMessageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">AdminTestcase.AllParentsAdinStaffComposeMessageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">AdminTestcase.AllMessagedropdownTest#replyToRandomMessageWithAttachment</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()=&apos;Messages&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60076}, goog:processID: 7184, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60076/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c3bffdfc36f530983ee3547da49a9226
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at AdminPages.AllMessagedropdownPage.clickOnMessageTab(AllMessagedropdownPage.java:61)
+	at AdminTestcase.AllMessagedropdownTest.setup(AllMessagedropdownTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">AdminTestcase.AllParentComposeMessageTest#sendAllParentsMessageWithRandomStaffCC</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()=&apos;Messages&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51350}, goog:processID: 23196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51350/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d31d8dc6a969f0f71d54379e5239aa7
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at AdminPages.AMessagePage.clickOnMessage(AMessagePage.java:31)
+	at AdminTestcase.AllParentComposeMessageTest.setupTest(AllParentComposeMessageTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">AdminTestcase.AllParentsAdinStaffComposeMessageTest#sendMessageWithAttachments</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()=&apos;Messages&apos;]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64468}, goog:processID: 22020, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64468/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b7d30f1b3e6701f819c19723c35ca3a3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at AdminPages.AMessagePage.clickOnMessage(AMessagePage.java:31)
+	at AdminTestcase.AllParentsAdinStaffComposeMessageTest.setupTest(AllParentsAdinStaffComposeMessageTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">AdminTestcase.AdminSearchMessageTest#replyToRandomMessageWithAttachment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">AdminTestcase.AllMessageSearchTest#replyToRandomMessageWithAttachment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">AdminTestcase.AllStaffMessageTest#testFullMessageCompositionAndSend</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">AdminTestcase.IndidualParentMessageTest#sendAllIndidualMessageWithRandomStaffCC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">AdminTestcase.IndidualStaffMessageTest#sendAllIndidualMessageWithRandomStaffCC</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">AdminTestcase.IndividualComposeMessageTest#sendIndividualMessageRandomly</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">AdminTestcase.StaffSearchMessageTest#replyToRandomMessageWithAttachment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

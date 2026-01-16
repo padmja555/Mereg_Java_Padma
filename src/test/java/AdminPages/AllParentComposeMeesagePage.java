@@ -93,31 +93,31 @@ public class AllParentComposeMeesagePage {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
-        // 1️⃣ Click Message Type dropdown
+        By messageTypeDropdown = By.xpath("//mat-select[@formcontrolname='messageType']");
+
+        // Open dropdown
         WebElement dropdown = wait.until(
-                ExpectedConditions.elementToBeClickable(
-                        By.xpath("//mat-select[@formcontrolname='messageType']")
-                )
+                ExpectedConditions.elementToBeClickable(messageTypeDropdown)
         );
         dropdown.click();
 
-        // 2️⃣ Wait for overlay options
         By optionsLocator = By.xpath(
                 "//div[contains(@class,'cdk-overlay-pane')]//mat-option//span"
         );
-        wait.until(ExpectedConditions.visibilityOfElementLocated(optionsLocator));
 
-        // 3️⃣ Get fresh options
-        List<WebElement> options = driver.findElements(optionsLocator);
+        // Wait until all options are visible
+        wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(optionsLocator));
 
-        // 4️⃣ Select random option
-        int randomIndex = new Random().nextInt(options.size());
+        int optionCount = driver.findElements(optionsLocator).size();
 
-        // ⚠️ Re-locate AGAIN before click (critical)
-        WebElement optionToClick = driver.findElements(optionsLocator).get(randomIndex);
+        if (optionCount == 0) {
+            throw new RuntimeException("No message type options found");
+        }
 
-        // 5️⃣ Click immediately (no reuse)
-        optionToClick.click();
+        int randomIndex = new Random().nextInt(optionCount);
+
+        // Re-locate and click immediately
+        driver.findElements(optionsLocator).get(randomIndex).click();
     }
 
     public void enterRandomSubjectAndMessage() {

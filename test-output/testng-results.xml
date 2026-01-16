@@ -1,52 +1,521 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="10" passed="7" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-08T18:30:51 IST" name="Default suite" finished-at="2026-01-08T18:32:08 IST" duration-ms="76750">
+  <suite started-at="2026-01-14T18:38:23 IST" name="Test Suite" finished-at="2026-01-14T18:45:08 IST" duration-ms="404931">
     <groups>
     </groups>
-    <test started-at="2026-01-08T18:30:51 IST" name="Default test" finished-at="2026-01-08T18:32:08 IST" duration-ms="76750">
-      <class name="AdminTestcase.ReplyStaffMessageTest">
-        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:AdminTestcase.ReplyStaffMessageTest@229f66ed]" started-at="2026-01-08T18:30:51 IST" name="setup" finished-at="2026-01-08T18:30:54 IST" duration-ms="3135" status="PASS">
+    <test started-at="2026-01-14T18:38:23 IST" name="Admin Testcase" finished-at="2026-01-14T18:45:08 IST" duration-ms="404931">
+      <class name="AdminTestcase.IndidualParentMessageTest">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:AdminTestcase.IndidualParentMessageTest@64ec96c6]" started-at="2026-01-14T18:43:20 IST" name="setup" finished-at="2026-01-14T18:43:24 IST" duration-ms="3520" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@64f1fd08]]>
+                <![CDATA[org.testng.TestRunner@568fd3de]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:AdminTestcase.ReplyStaffMessageTest@229f66ed]" started-at="2026-01-08T18:30:54 IST" name="setup" finished-at="2026-01-08T18:30:56 IST" duration-ms="2115" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:AdminTestcase.IndidualParentMessageTest@64ec96c6]" started-at="2026-01-14T18:43:24 IST" name="setupTest" finished-at="2026-01-14T18:43:26 IST" duration-ms="2566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="sendAllIndidualMessageWithRandomStaffCC()[pri:0, instance:AdminTestcase.IndidualParentMessageTest@64ec96c6]" started-at="2026-01-14T18:43:26 IST" name="sendAllIndidualMessageWithRandomStaffCC" finished-at="2026-01-14T18:43:41 IST" duration-ms="14395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendAllIndidualMessageWithRandomStaffCC -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AdminTestcase.IndidualParentMessageTest@64ec96c6]" started-at="2026-01-14T18:43:41 IST" name="tearDown" finished-at="2026-01-14T18:43:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AdminTestcase.IndidualParentMessageTest -->
+      <class name="AdminTestcase.StaffSearchMessageTest">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:AdminTestcase.StaffSearchMessageTest@1e13529a]" started-at="2026-01-14T18:44:13 IST" name="setup" finished-at="2026-01-14T18:44:16 IST" duration-ms="3218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@568fd3de]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="replyToRandomMessageWithAttachment()[pri:0, instance:AdminTestcase.ReplyStaffMessageTest@229f66ed]" started-at="2026-01-08T18:30:56 IST" name="replyToRandomMessageWithAttachment" finished-at="2026-01-08T18:32:08 IST" duration-ms="71463" status="FAIL">
+        <test-method is-config="true" signature="setup()[pri:0, instance:AdminTestcase.StaffSearchMessageTest@1e13529a]" started-at="2026-01-14T18:44:16 IST" name="setup" finished-at="2026-01-14T18:44:18 IST" duration-ms="2033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="replyToRandomMessageWithAttachment()[pri:0, instance:AdminTestcase.StaffSearchMessageTest@1e13529a]" started-at="2026-01-14T18:44:18 IST" name="replyToRandomMessageWithAttachment" finished-at="2026-01-14T18:45:08 IST" duration-ms="49406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- replyToRandomMessageWithAttachment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AdminTestcase.StaffSearchMessageTest@1e13529a]" started-at="2026-01-14T18:45:08 IST" name="tearDown" finished-at="2026-01-14T18:45:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AdminTestcase.StaffSearchMessageTest -->
+      <class name="AdminTestcase.AllMessageSearchTest">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:AdminTestcase.AllMessageSearchTest@19b843ba]" started-at="2026-01-14T18:42:30 IST" name="setup" finished-at="2026-01-14T18:42:34 IST" duration-ms="4050" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@568fd3de]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:AdminTestcase.AllMessageSearchTest@19b843ba]" started-at="2026-01-14T18:42:34 IST" name="setup" finished-at="2026-01-14T18:42:36 IST" duration-ms="1608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="replyToRandomMessageWithAttachment()[pri:0, instance:AdminTestcase.AllMessageSearchTest@19b843ba]" started-at="2026-01-14T18:42:36 IST" name="replyToRandomMessageWithAttachment" finished-at="2026-01-14T18:43:20 IST" duration-ms="44526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- replyToRandomMessageWithAttachment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AdminTestcase.AllMessageSearchTest@19b843ba]" started-at="2026-01-14T18:43:20 IST" name="tearDown" finished-at="2026-01-14T18:43:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AdminTestcase.AllMessageSearchTest -->
+      <class name="AdminTestcase.AllParentsAdinStaffComposeMessageTest">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:AdminTestcase.AllParentsAdinStaffComposeMessageTest@51bd8b5c]" started-at="2026-01-14T18:38:48 IST" name="setup" finished-at="2026-01-14T18:38:51 IST" duration-ms="3535" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@568fd3de]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:AdminTestcase.AllParentsAdinStaffComposeMessageTest@51bd8b5c]" started-at="2026-01-14T18:38:51 IST" name="setupTest" finished-at="2026-01-14T18:39:12 IST" duration-ms="20657" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(.,'Send Reply')] (tried for 20 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()='Messages']] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.23.1', revision: '656257d8e9'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60554}, goog:processID: 9220, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60554/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a05cfde0f235bd2c969055fc9313ec03]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64468}, goog:processID: 22020, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64468/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b7d30f1b3e6701f819c19723c35ca3a3]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[contains(.,'Send Reply')] (tried for 20 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()='Messages']] (tried for 20 second(s) with 500 milliseconds interval)
 Build info: version: '4.23.1', revision: '656257d8e9'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60554}, goog:processID: 9220, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60554/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a05cfde0f235bd2c969055fc9313ec03
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64468}, goog:processID: 22020, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64468/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b7d30f1b3e6701f819c19723c35ca3a3
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at AdminPages.ReplyStaffMessagePage.clickSendReply(ReplyStaffMessagePage.java:204)
-at AdminTestcase.ReplyStaffMessageTest.replyToRandomMessageWithAttachment(ReplyStaffMessageTest.java:67)
+at AdminPages.AMessagePage.clickOnMessage(AMessagePage.java:31)
+at AdminTestcase.AllParentsAdinStaffComposeMessageTest.setupTest(AllParentsAdinStaffComposeMessageTest.java:28)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="sendMessageWithAttachments()[pri:0, instance:AdminTestcase.AllParentsAdinStaffComposeMessageTest@51bd8b5c]" started-at="2026-01-14T18:39:12 IST" name="sendMessageWithAttachments" finished-at="2026-01-14T18:39:12 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()='Messages']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64468}, goog:processID: 22020, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64468/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b7d30f1b3e6701f819c19723c35ca3a3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()='Messages']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64468}, goog:processID: 22020, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64468/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b7d30f1b3e6701f819c19723c35ca3a3
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at AdminPages.AMessagePage.clickOnMessage(AMessagePage.java:31)
+at AdminTestcase.AllParentsAdinStaffComposeMessageTest.setupTest(AllParentsAdinStaffComposeMessageTest.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMessageWithAttachments -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AdminTestcase.AllParentsAdinStaffComposeMessageTest@51bd8b5c]" started-at="2026-01-14T18:39:12 IST" name="tearDown" finished-at="2026-01-14T18:39:12 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AdminTestcase.AllParentsAdinStaffComposeMessageTest -->
+      <class name="AdminTestcase.AdminSearchMessageTest">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:AdminTestcase.AdminSearchMessageTest@2462cb01]" started-at="2026-01-14T18:41:34 IST" name="setup" finished-at="2026-01-14T18:41:38 IST" duration-ms="3700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@568fd3de]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:AdminTestcase.AdminSearchMessageTest@2462cb01]" started-at="2026-01-14T18:41:38 IST" name="setup" finished-at="2026-01-14T18:41:40 IST" duration-ms="2615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="replyToRandomMessageWithAttachment()[pri:0, instance:AdminTestcase.AdminSearchMessageTest@2462cb01]" started-at="2026-01-14T18:41:40 IST" name="replyToRandomMessageWithAttachment" finished-at="2026-01-14T18:42:30 IST" duration-ms="49757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- replyToRandomMessageWithAttachment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AdminTestcase.AdminSearchMessageTest@2462cb01]" started-at="2026-01-14T18:42:30 IST" name="tearDown" finished-at="2026-01-14T18:42:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AdminTestcase.AdminSearchMessageTest -->
+      <class name="AdminTestcase.IndividualComposeMessageTest">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:AdminTestcase.IndividualComposeMessageTest@456d6c1e]" started-at="2026-01-14T18:43:54 IST" name="setup" finished-at="2026-01-14T18:43:56 IST" duration-ms="2781" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@568fd3de]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:AdminTestcase.IndividualComposeMessageTest@456d6c1e]" started-at="2026-01-14T18:43:56 IST" name="setup" finished-at="2026-01-14T18:44:02 IST" duration-ms="5609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="sendIndividualMessageRandomly()[pri:0, instance:AdminTestcase.IndividualComposeMessageTest@456d6c1e]" started-at="2026-01-14T18:44:02 IST" name="sendIndividualMessageRandomly" finished-at="2026-01-14T18:44:13 IST" duration-ms="11139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendIndividualMessageRandomly -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AdminTestcase.IndividualComposeMessageTest@456d6c1e]" started-at="2026-01-14T18:44:13 IST" name="tearDown" finished-at="2026-01-14T18:44:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AdminTestcase.IndividualComposeMessageTest -->
+      <class name="AdminTestcase.IndidualStaffMessageTest">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:AdminTestcase.IndidualStaffMessageTest@77659b30]" started-at="2026-01-14T18:43:41 IST" name="setup" finished-at="2026-01-14T18:43:43 IST" duration-ms="2484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@568fd3de]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:AdminTestcase.IndidualStaffMessageTest@77659b30]" started-at="2026-01-14T18:43:43 IST" name="setupTest" finished-at="2026-01-14T18:43:45 IST" duration-ms="1726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="sendAllIndidualMessageWithRandomStaffCC()[pri:0, instance:AdminTestcase.IndidualStaffMessageTest@77659b30]" started-at="2026-01-14T18:43:45 IST" name="sendAllIndidualMessageWithRandomStaffCC" finished-at="2026-01-14T18:43:54 IST" duration-ms="8671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendAllIndidualMessageWithRandomStaffCC -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AdminTestcase.IndidualStaffMessageTest@77659b30]" started-at="2026-01-14T18:43:54 IST" name="tearDown" finished-at="2026-01-14T18:43:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AdminTestcase.IndidualStaffMessageTest -->
+      <class name="AdminTestcase.AllParentComposeMessageTest">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:AdminTestcase.AllParentComposeMessageTest@7b50df34]" started-at="2026-01-14T18:39:12 IST" name="setup" finished-at="2026-01-14T18:39:17 IST" duration-ms="4403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@568fd3de]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:AdminTestcase.AllParentComposeMessageTest@7b50df34]" started-at="2026-01-14T18:39:17 IST" name="setupTest" finished-at="2026-01-14T18:39:39 IST" duration-ms="22818" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()='Messages']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51350}, goog:processID: 23196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51350/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d31d8dc6a969f0f71d54379e5239aa7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()='Messages']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51350}, goog:processID: 23196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51350/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d31d8dc6a969f0f71d54379e5239aa7
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at AdminPages.AMessagePage.clickOnMessage(AMessagePage.java:31)
+at AdminTestcase.AllParentComposeMessageTest.setupTest(AllParentComposeMessageTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method signature="sendAllParentsMessageWithRandomStaffCC()[pri:0, instance:AdminTestcase.AllParentComposeMessageTest@7b50df34]" started-at="2026-01-14T18:39:39 IST" name="sendAllParentsMessageWithRandomStaffCC" finished-at="2026-01-14T18:39:39 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()='Messages']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51350}, goog:processID: 23196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51350/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d31d8dc6a969f0f71d54379e5239aa7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()='Messages']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51350}, goog:processID: 23196, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51350/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d31d8dc6a969f0f71d54379e5239aa7
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at AdminPages.AMessagePage.clickOnMessage(AMessagePage.java:31)
+at AdminTestcase.AllParentComposeMessageTest.setupTest(AllParentComposeMessageTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendAllParentsMessageWithRandomStaffCC -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AdminTestcase.AllParentComposeMessageTest@7b50df34]" started-at="2026-01-14T18:39:39 IST" name="tearDown" finished-at="2026-01-14T18:39:39 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AdminTestcase.AllParentComposeMessageTest -->
+      <class name="AdminTestcase.AllMessagedropdownTest">
+        <test-method is-config="true" signature="setup(org.testng.ITestContext)[pri:0, instance:AdminTestcase.AllMessagedropdownTest@3e2055d6]" started-at="2026-01-14T18:38:23 IST" name="setup" finished-at="2026-01-14T18:38:27 IST" duration-ms="4109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@568fd3de]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:AdminTestcase.AllMessagedropdownTest@3e2055d6]" started-at="2026-01-14T18:38:27 IST" name="setup" finished-at="2026-01-14T18:38:48 IST" duration-ms="20825" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()='Messages']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60076}, goog:processID: 7184, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60076/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c3bffdfc36f530983ee3547da49a9226]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()='Messages']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60076}, goog:processID: 7184, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60076/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c3bffdfc36f530983ee3547da49a9226
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at AdminPages.AllMessagedropdownPage.clickOnMessageTab(AllMessagedropdownPage.java:61)
+at AdminTestcase.AllMessagedropdownTest.setup(AllMessagedropdownTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="replyToRandomMessageWithAttachment()[pri:0, instance:AdminTestcase.AllMessagedropdownTest@3e2055d6]" started-at="2026-01-14T18:38:48 IST" name="replyToRandomMessageWithAttachment" finished-at="2026-01-14T18:38:48 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()='Messages']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60076}, goog:processID: 7184, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60076/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c3bffdfc36f530983ee3547da49a9226]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[.//h4[normalize-space()='Messages']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.193, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\PADMA~1.DES\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60076}, goog:processID: 7184, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60076/devtoo..., se:cdpVersion: 143.0.7499.193, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c3bffdfc36f530983ee3547da49a9226
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at AdminPages.AllMessagedropdownPage.clickOnMessageTab(AllMessagedropdownPage.java:61)
+at AdminTestcase.AllMessagedropdownTest.setup(AllMessagedropdownTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
@@ -75,11 +544,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- replyToRandomMessageWithAttachment -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AdminTestcase.ReplyStaffMessageTest@229f66ed]" started-at="2026-01-08T18:32:08 IST" name="tearDown" finished-at="2026-01-08T18:32:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AdminTestcase.AllMessagedropdownTest@3e2055d6]" started-at="2026-01-14T18:38:48 IST" name="tearDown" finished-at="2026-01-14T18:38:48 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- AdminTestcase.ReplyStaffMessageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- AdminTestcase.AllMessagedropdownTest -->
+      <class name="AdminTestcase.AllStaffMessageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:AdminTestcase.AllStaffMessageTest@1b410b60]" started-at="2026-01-14T18:39:39 IST" name="setup" finished-at="2026-01-14T18:39:53 IST" duration-ms="14098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testFullMessageCompositionAndSend()[pri:1, instance:AdminTestcase.AllStaffMessageTest@1b410b60]" started-at="2026-01-14T18:39:53 IST" name="testFullMessageCompositionAndSend" description="Verify successful message composition, selection of multiple recipients, file upload, and sending." finished-at="2026-01-14T18:41:34 IST" duration-ms="100573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFullMessageCompositionAndSend -->
+      </class> <!-- AdminTestcase.AllStaffMessageTest -->
+    </test> <!-- Admin Testcase -->
+  </suite> <!-- Test Suite -->
 </testng-results>

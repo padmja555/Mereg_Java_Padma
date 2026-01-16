@@ -14,8 +14,9 @@ public class SuperLoginPage {
     // Locators
     private final By emailField = By.xpath("//input[@name='UserID']");
     private final By passwordField = By.xpath("//input[@name='password']");
-    private final By signInButton = By.xpath("//a[@class='mat-focus-indicator mat-raised-button mat-button-base']");
+    //private final By signInButton = By.xpath("//a[@class='mat-focus-indicator mat-raised-button mat-button-base']");
    // private final By errorMessage = By.xpath("//div[contains(@class,'error') or contains(text(),'Invalid')]");
+    private By signInButton = By.xpath("//button//span[text()=' Sign In ']/parent::button");
 
     public SuperLoginPage(WebDriver driver) {
         this.driver = driver;

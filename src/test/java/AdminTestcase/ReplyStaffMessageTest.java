@@ -36,7 +36,8 @@ public class ReplyStaffMessageTest extends BaseDriver {
     public void replyToRandomMessageWithAttachment() {
         // 1️⃣ Click the Staff tab properly
         replystaffPage.clickOnStaffTab();
-
+        
+        replystaffPage.waitForMessageList();
         // 2️⃣ Open a random staff message
         replystaffPage.openRandomMessage();
 

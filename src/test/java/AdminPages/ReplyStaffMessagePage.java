@@ -46,10 +46,13 @@ public class ReplyStaffMessagePage {
             By.xpath("//textarea[contains(@placeholder,'Type your reply')]");
 
     private By uploadInput =
-            By.xpath("//input[@type='file']");
+            //By.xpath("//button[contains(@aria-label,'Attach')");
+    		By.xpath("//input[@type='file']");
+    ////button[contains(@aria-label,'Attach')]
 
     private By sendReplyButton =
             By.xpath("//button[contains(.,'Send Reply')]");
+    
     By fileUploadInput = By.xpath("//input[@type='file']"); 
     
     // The visible label/button that users click 
@@ -69,6 +72,7 @@ public class ReplyStaffMessagePage {
                 ExpectedConditions.visibilityOfElementLocated(messageTitle)
         ).getText().trim();
     }
+    
     public void clickOnStaffTab() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         By staffTab = By.xpath("//div[@role='tab']//div[normalize-space()='Staff']");
@@ -76,41 +80,60 @@ public class ReplyStaffMessagePage {
     }
 
 
-    /** Click any random message */
-    public void openRandomMessage() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    public void waitForMessageList() {
 
-        try {
-            // 1️⃣ Wait for the "Staff" tab to be clickable and click it
-            wait.until(ExpectedConditions.elementToBeClickable(
-                    By.xpath("//div[@role='tab']//div[normalize-space()='Staff']")
-            )).click();
-            System.out.println("Staff tab clicked.");
+        By staffMessages = By.xpath(
+            "//div[contains(@class,'cursor-pointer') or contains(@class,'message')]"
+        );
 
-            // 2️⃣ Wait until staff messages are visible
-            wait.until(ExpectedConditions.visibilityOfElementLocated(
-                    By.cssSelector(".staff-message")
-            ));
-            System.out.println("Staff messages are visible.");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(staffMessages));
 
-            // 3️⃣ Find all staff messages
-            List<WebElement> staffMessages = driver.findElements(By.cssSelector(".staff-message"));
-
-            // 4️⃣ Check if there are any messages
-            if (!staffMessages.isEmpty()) {
-                // Click reply button for the first message
-                WebElement replyButton = staffMessages.get(0).findElement(By.cssSelector(".reply-btn"));
-                replyButton.click();
-                System.out.println("Clicked reply button on first staff message.");
-            } else {
-                System.out.println("No staff messages found, skipping reply step.");
-            }
-        } catch (Exception e) {
-            System.out.println("Error in openRandomMessage(): " + e.getMessage());
-            e.printStackTrace();
-        }
+        System.out.println("✅ Staff messages loaded");
     }
-    
+    public void openRandomMessage() {
+
+        By adminMeRegMessages =
+            By.xpath("//div[contains(@class,'message-header')][.//h3[normalize-space()='Admin MeReg']]");
+
+        List<WebElement> messages = wait.until(
+            ExpectedConditions.visibilityOfAllElementsLocatedBy(adminMeRegMessages)
+        );
+
+        if (messages.isEmpty()) {
+            throw new RuntimeException("❌ No Admin MeReg messages found");
+        }
+
+        WebElement randomMessage = messages.get(random.nextInt(messages.size()));
+
+        // 🔥 Click INNER element, not container
+        WebElement clickable =
+            randomMessage.findElement(By.xpath(".//h3"));
+
+        wait.until(ExpectedConditions.elementToBeClickable(clickable)).click();
+
+        // 🔥 Wait until reply panel loads
+        wait.until(ExpectedConditions.presenceOfElementLocated(replyTextarea));
+    }
+
+
+    /** Click any random message */
+    /*
+    public void openRandomMessage() {
+
+        By staffMessages = By.xpath(
+            "//div[contains(@class,'cursor-pointer') or contains(@class,'message')]"
+        );
+
+        List<WebElement> messages = wait.until(
+            ExpectedConditions.numberOfElementsToBeMoreThan(staffMessages, 0)
+        );
+
+        WebElement randomMessage =
+            messages.get(new Random().nextInt(messages.size()));
+
+        wait.until(ExpectedConditions.elementToBeClickable(randomMessage)).click();
+    }
+    /*
     
     /** Type random reply */
     public void typeRandomReply() {
@@ -215,94 +238,7 @@ public class ReplyStaffMessagePage {
             System.out.println("⚠️ Page load wait interrupted");
         }
     }
-   public void uploadFileWithDialog() throws Exception {
-       // 1️⃣ Click the "Upload Attachment" button to open Windows file dialog
-       WebElement uploadButton = driver.findElement(By.xpath("//label[@for='fileInput']"));
-       uploadButton.click();
-       Thread.sleep(2000); // Wait for dialog to open
-
-       // 2️⃣ Prepare the file path
-       String filePath = "C:\\Users\\padma.DESKTOP-ODC64OD\\OneDrive\\Pictures\\Screenshots\\file1.png\r\n"
-       		+ "";
-       //C:\Users\padma.DESKTOP-ODC64OD\OneDrive\Pictures\Screenshots\\file1.png
-       // 3️⃣ Copy the file path to clipboard
-       StringSelection selection = new StringSelection(filePath);
-       Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, null);
-
-       // 4️⃣ Use Robot to paste the path and press Enter
-       Robot robot = new Robot();
-       robot.delay(1000);
-
-       // Press CTRL+V
-       robot.keyPress(KeyEvent.VK_CONTROL);
-       robot.keyPress(KeyEvent.VK_V);
-       robot.keyRelease(KeyEvent.VK_V);
-       robot.keyRelease(KeyEvent.VK_CONTROL);
-       robot.delay(1000);
-
-       // Press ENTER
-       robot.keyPress(KeyEvent.VK_ENTER);
-       robot.keyRelease(KeyEvent.VK_ENTER);
-
-       System.out.println("✅ File uploaded successfully via Windows dialog.");
-       Thread.sleep(3000);
-   }
-   public void uploadFileByRemovingHidingStyles(String absoluteFilePath) {
-       System.out.println("Attempting file upload by manipulating the hidden input element...");
-       JavascriptExecutor js = (JavascriptExecutor) driver;
-
-       try {
-           // 1. Resolve the absolute path to ensure the file exists (crucial for local execution)
-           File file = new File(absoluteFilePath);
-           if (!file.exists()) {
-               System.err.println("❌ Error: File not found at path: " + absoluteFilePath);
-               return;
-           }
-
-           // 2. Get the actual file input element (it exists in the DOM but is hidden)
-           WebElement fileInput = wait.until(ExpectedConditions.presenceOfElementLocated(fileUploadInput));
-
-           // --- CRITICAL ROBUSTNESS STEP ---
-           // 3. Force the element to be visible/interactable using JavaScript
-           
-           // Try removing the specific class you mentioned first
-           try {
-                js.executeScript("arguments[0].classList.remove('" + HIDDEN_CLASS_NAME + "');", fileInput);
-                System.out.println("✅ JS executed: Removed specific class '" + HIDDEN_CLASS_NAME + "'.");
-           } catch (Exception classE) {
-                // Fallback: Set display/visibility/opacity directly to overcome all hiding styles
-                js.executeScript("arguments[0].style.display='block'; arguments[0].style.visibility='visible'; arguments[0].style.height='1px'; arguments[0].style.opacity='1';", fileInput);
-                System.out.println("✅ JS executed: Forced display/visibility style properties.");
-           }
-           
-           // --- OPTIONAL FALLBACK: Try clicking the visible button via JS if required to trigger app state ---
-           try {
-               WebElement label = driver.findElement(fileUploadLabel);
-               js.executeScript("arguments[0].click();", label);
-               System.out.println("✅ JS Clicked the visible upload label (pre-sendKeys trigger).");
-               Thread.sleep(500);
-           } catch (Exception clickE) {
-               // Ignore if clicking the label fails, as sendKeys should work without it now
-               System.out.println("⚠️ Could not click visible label via JS. Proceeding with sendKeys.");
-           }
-           // --- END OPTIONAL FALLBACK ---
-           
-           // 4. Send the file path
-           fileInput.sendKeys(file.getAbsolutePath());
-           System.out.println("✅ File uploaded successfully: " + file.getName());
-
-           // 5. Cleanup: Hide the input again (optional but good practice)
-           js.executeScript("arguments[0].style.display='none'; arguments[0].style.visibility='hidden';", fileInput);
-           System.out.println("✅ JS executed: Input element hidden (cleanup).");
-
-           Thread.sleep(3000); // Allow time for the application to process the upload
-           
-       } catch (Exception e) {
-           System.err.println("❌ File upload failed via JS technique: " + e.getClass().getSimpleName() + " - " + e.getMessage());
-       }
-   }
-   
-   public void uploadMultipleFiles(String... paths) {
+    public void uploadMultipleFiles(String... paths) {
 
 	    WebElement input = wait.until(
 	        ExpectedConditions.presenceOfElementLocated(
@@ -331,6 +267,7 @@ public class ReplyStaffMessagePage {
 	    input.sendKeys(validFiles.toString().trim());
 	    System.out.println("✅ Files uploaded successfully");
 	}
+
 
 
 }

@@ -6,12 +6,30 @@
   </listeners>
   <test thread-count="5" name="Admin Testcase(failed)">
     <classes>
-      <class name="AdminTestcase.ComposeMessageTest">
+      <class name="AdminTestcase.AllParentComposeMessageTest">
         <methods>
+          <include name="setupTest"/>
+          <include name="sendAllParentsMessageWithRandomStaffCC"/>
+          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="testFullMessageCompositionAndSend"/>
         </methods>
-      </class> <!-- AdminTestcase.ComposeMessageTest -->
+      </class> <!-- AdminTestcase.AllParentComposeMessageTest -->
+      <class name="AdminTestcase.AllMessagedropdownTest">
+        <methods>
+          <include name="replyToRandomMessageWithAttachment"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- AdminTestcase.AllMessagedropdownTest -->
+      <class name="AdminTestcase.AllParentsAdinStaffComposeMessageTest">
+        <methods>
+          <include name="setupTest"/>
+          <include name="sendMessageWithAttachments"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- AdminTestcase.AllParentsAdinStaffComposeMessageTest -->
     </classes>
   </test> <!-- Admin Testcase(failed) -->
 </suite> <!-- Failed suite [Test Suite] -->

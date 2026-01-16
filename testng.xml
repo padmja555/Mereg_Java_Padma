@@ -7,8 +7,17 @@
     <test name="Admin Testcase">
         <classes>
                 
- 				 <class name="AdminTestcase.PaymentSummaryTest"/>
- 				    <class name="AdminTestcase.ComposeMessageTest"/>
+ 				 <class name="AdminTestcase.AllMessagedropdownTest"/>
+ 				    <class name="AdminTestcase.AllParentsAdinStaffComposeMessageTest"/>
+ 				     <class name="AdminTestcase.AllParentComposeMessageTest"/>
+ 				      <class name="AdminTestcase.AllStaffMessageTest"/>
+ 				       <class name="AdminTestcase.AdminSearchMessageTest"/>
+ 				        <class name="AdminTestcase.AllMessageSearchTest"/>
+ 				         <class name="AdminTestcase.IndidualParentMessageTest"/>
+ 				          <class name="AdminTestcase.IndidualStaffMessageTest"/>
+ 				      		<class name="AdminTestcase.IndividualComposeMessageTest"/>
+ 				      		<class name="AdminTestcase.StaffSearchMessageTest"/>
+ 				      		<class name="AdminTestcase.StaffSearchMessageTest"/>
 
         
         </classes>
